@@ -1,0 +1,124 @@
+/* Reinicio de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  min-height: 100vh;
+  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+  width: 100%;
+  min-height: 70px;
+  padding: 15px 30px;
+  background-color: #111111;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo del navbar */
+.logo {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Lista de enlaces */
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  list-style: none;
+}
+
+/* Estilos de los enlaces */
+.links a {
+  color: #ffffff;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+/* Efecto al pasar el mouse */
+.links a:hover {
+  color: aqua;
+}
+
+/* Contenido principal */
+main h1 {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Contenedor flexible de tarjetas */
+.section-1 {
+  width: 100%;
+  padding: 40px;
+  background-color: #320049;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Tarjetas */
+.card {
+  width: 150px;
+  height: 150px;
+  background-color: #580181;
+  color: #ffffff;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Página del carrito */
+.carrito {
+  padding: 40px;
+  text-align: center;
+}
+
+.carrito p {
+  margin-bottom: 30px;
+}
+
+/* Botón para regresar */
+.boton {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #580181;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.boton:hover {
+  background-color: #320049;
+}
+
+/* Adaptación para pantallas pequeñas */
+@media (max-width: 700px) {
+  .navbar {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .links {
+    flex-direction: column;
+  }
+
+  .section-1 {
+    flex-direction: column;
+  }
+}
